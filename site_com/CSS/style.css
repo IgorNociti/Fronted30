@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    background-image: url(https://th.bing.com/th/id/OIP.NdRM5y1H1hMoFQlxUKtd3gHaE8?w=1024&h=683&rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:  center;
+    flex-direction: column;
+    border: red solid 1px;
+}
+
+h1{
+    font-size: 120px;
+    color: white;
+    text-shadow: 5px 3px 3px rgb(85, 24, 83);
+    animation: oscilar 3s infinite; 
+}
+
+img{
+    animation: rotate 5s infinite;
+}
+
+h1:hover{
+    text-shadow: 5px 3px 3px rgb(19, 85, 227);
+    cursor: pointer;
+}
+
+@keyframes oscilar {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
